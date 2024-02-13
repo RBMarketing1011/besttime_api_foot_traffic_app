@@ -1,0 +1,9 @@
+.Header {
+  width: 100vw;
+  height: 120px;
+  padding-inline: 2rem;
+}
+
+.Header a {
+  width: 75px;
+}

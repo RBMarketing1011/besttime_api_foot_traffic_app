@@ -1,0 +1,353 @@
+/*================================== Utility Classes ==========================*/
+/* Fonts */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.small {
+  font-size: var(--small);
+}
+
+.medium {
+  font-size: var(--medium);
+}
+
+.large {
+  font-size: var(--large);
+}
+
+.x-large {
+  font-size: var(--x-large);
+}
+
+.xx-large {
+  font-size: var(--xx-large);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+/* Colors */
+.color-light {
+  color: var(--color-neutral-100);
+}
+
+.color-dark {
+  color: var(--color-neutral-900);
+}
+
+.color-primary {
+  color: var(--color-primary-300);
+}
+
+.color-accent {
+  color: var(--color-accent-300);
+}
+
+/* Background Colors */
+.bg-light {
+  background: var(--color-neutral-100);
+}
+
+.bg-dark {
+  background: var(--color-neutral-900);
+}
+
+.bg-primary {
+  background: var(--color-primary-300);
+}
+
+.bg-accent {
+  background: var(--color-accent-300);
+}
+
+/* Dark bg with .65 opacity and rounded borders */
+.bg-dark-50 {
+  background: #00000065;
+  border-radius: .6rem;
+  padding: 1rem;
+}
+
+/* opacity */
+.hide {
+  opacity: 0;
+}
+
+.op-25 {
+  opacity: .25;
+}
+
+.op-50 {
+  opacity: .5;
+}
+
+.op-75 {
+  opacity: .75;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* Flex Utils */
+.flex {
+  display: flex;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-1 {
+  gap: .5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
+
+.gap-5 {
+  gap: 2.5rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Width & Height */
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: calc(75% - 1.25rem);
+}
+
+.w-50 {
+  width: calc(50% - 1.25rem);
+}
+
+.w-25 {
+  width: calc(25% - 1.25rem);
+}
+
+.w-auto {
+  width: auto;
+}
+
+.h-100 {
+  width: 100%;
+}
+
+.h-75 {
+  width: 75%;
+}
+
+.h-50 {
+  width: 50%;
+}
+
+.h-25 {
+  width: 25%;
+}
+
+.h-auto {
+  width: auto;
+}
+
+/* Underline */
+.underline {
+  border-bottom: 1.5px solid currentColor;
+}
+
+/* Buttons */
+
+.btnGroup {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.btn {
+  width: 100%;
+  padding-block: 1rem;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: .6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  --text-color: var(--color-neutral-100);
+  --bg-color: var(--color-primary-300);
+  --border-color: var(--color-primary-300);
+  --shadow-color: var(--color-primary-100);
+}
+
+.btn-accent {
+  --text-color: var(--color-neutral-100);
+  --bg-color: var(--color-accent-300);
+  --border-color: var(--color-accent-300);
+  --shadow-color: var(--color-accent-100);
+}
+
+.btn-solid {
+  color: var(--text-color);
+  background: var(--bg-color);
+  border: 2px solid var(--border-color);
+
+  transition: .3s ease;
+}
+
+.btn-solid:hover,
+.btn-solid:focus {
+  --text-color: var(--border-color);
+  --bg-color: transparent;
+  
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.btn-outline {
+  color: var(--border-color);
+  background: transparent;
+  border: 2px solid var(--border-color);
+
+  transition: .3s ease;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  color: var(--text-color);
+  background: var(--bg-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+/* NavLinks & Links */
+.navLink {
+  position: relative;
+
+  transition: .2s ease;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: var(--color-accent-300);
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--color-accent-300);
+
+  transition: .2s ease;
+}
+
+.navLink:hover::before,
+.navLink.active::before {
+  width: 100%;
+}
+
+/* Hover */
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .btnGroup {
+    flex-direction: column;
+  }
+}

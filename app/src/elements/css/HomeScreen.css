@@ -1,0 +1,24 @@
+.HomeScreen {
+  width: 100vw;
+  height: calc(100vh - 120px);
+}
+
+.HomeScreen .charts {
+  width: 100%;
+  height: calc(100vh - 120px);
+
+  padding: 75px;
+
+  overflow-y: auto;
+}
+
+.HomeScreen .chart {
+  padding: 1rem;
+  border-radius: .6rem;
+  box-shadow: 0 0 10px var(--color-accent-300);
+}
+
+.HomeScreen .chart canvas {
+  width: 100% !important;
+  height: auto !important;
+}
